@@ -47,7 +47,7 @@ a:hover {
   border-color: var(--color-secondary);
 }
 header {
-  background-image: url("../Malang/Menjelajah-5-Zaman.jpg");
+  background-image: url("kenangan.png");
   min-height: 100vh;
   background-size: cover;
 }
