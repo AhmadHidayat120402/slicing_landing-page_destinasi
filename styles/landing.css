@@ -31,6 +31,13 @@ a {
   text-decoration: none;
 }
 
+.rounded-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
 a:hover {
   color: var(--color-primary);
 }
@@ -48,7 +55,7 @@ a:hover {
 }
 header {
   background-image: url("1.jpg");
-  min-height: 100vh;
+  min-height: 80vh;
   background-size: cover;
 }
 
