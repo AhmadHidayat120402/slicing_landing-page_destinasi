@@ -5,7 +5,7 @@
   --color-secondary: #000000;
   --color-gray: rgba(0, 0, 0, 0.6);
   --color-white: #fff;
-  --color-bg: #f8f8fb;
+  --color-bg: #ffffff;
 
   --heading-1-size: 64px;
   --heading-2-size: 54px;
@@ -42,17 +42,37 @@ a:hover {
   color: var(--color-primary);
 }
 .btn-primary {
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
+  color: white;
+  background-color: black;
   border-color: var(--color-primary);
   height: 40px;
 }
+.btn-second {
+  color: white;
+  background-color: black;
+  border-color: var(--color-primary);
+  height: 100px;
+  width: 300px;
+  margin: 0 20px;
+}
+
+.rounded-button {
+  border-radius: 10px; /* You can adjust the value to your liking */
+  padding: 10px 20px; /* This is just for example purposes, you can adjust the values as needed */
+  font-size: 16px; /* This is just for example purposes, you can adjust the value as needed */
+}
 
 .btn-primary:hover {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  color: black;
+  background-color: white;
   border-color: var(--color-secondary);
 }
+.btn-second:hover {
+  color: black;
+  background-color:white;
+  border-color: var(--color-secondary);
+}
+
 header {
   background-image: url("1.jpg");
   min-height: 80vh;
@@ -86,6 +106,22 @@ section .section-description {
   margin: 0;
 }
 
+section .section-caption {
+  font-size: var(--heading-5-size);
+  color: var(--color-black);
+  margin: 0;
+}
+
+.section-footer{
+  color: #fff;
+}
+
+.bg-color{
+  background-color: rgb(201, 201, 201);
+  width: 500px;
+  padding: 70px;
+}
+
 .why-choose,
 .popular-destionation,
 .take-break,
@@ -94,6 +130,10 @@ section .section-description {
 .subscirber,
 .footerCuy {
   background-color: var(--color-bg);
+}
+
+.footerCuy{
+  background-color: black;
 }
 
 /* .why-choose .card .icons {
@@ -116,7 +156,6 @@ section .section-description {
 }
 
 .popular-destionation .card .images {
-  height: 300px;
   object-fit: cover;
 }
 
@@ -125,7 +164,7 @@ section .section-description {
 }
 
 .our-travel-packages .card .image {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .our-travel-packages .card {
@@ -137,7 +176,7 @@ section .section-description {
 }
 
 .travel-Packages .card .card-image {
-  height: 300px;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -172,6 +211,16 @@ section .section-description {
   left: 30%;
 } */
 .subscirber .container .row .col-md-6 .icon-fire {
-  top: 90px;
+  top: 50px;
   left: 95%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom dengan lebar yang sama */
+  grid-gap: 10px; /* Memberi jarak 10px antar item */
+}
+
+.grid-item {
+  text-align: center;
 }
